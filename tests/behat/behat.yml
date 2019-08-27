@@ -50,13 +50,28 @@ default:
         error_message_selector: '.messages--error'
         success_message_selector: '.messages--status'
       api_driver: 'drush'
-      drupal:
-        drupal_root: '/var/www/html/docroot'
       drush:
         alias: 'drupal.local'
-        binary: '../../bin/drush'
     FailAid\Extension:
       screenshot:
         directory: "%paths.base%/screenshots/"
         mode: default
         autoClean: true
+promettraining:
+  suites:
+    general:
+      filters:
+        tags: ~@skip
+  extensions:
+    Behat\MinkExtension:
+      javascript_session: selenium2
+      selenium2:
+        wd_host: http://selenium.test:4444/wd/hub
+        browser: chrome
+        capabilities:
+          marionette: true
+      base_url: 'https://behat.promettraining.com'
+    Drupal\DrupalExtension:
+      api_driver: 'drush'
+      drush:
+        alias: 'behat.promettraining'

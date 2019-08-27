@@ -8,3 +8,12 @@ local:
   paths:
     - files: /var/www/html/docroot/sites/default/files
     - drush-script: /var/www/html/bin/drush
+promettraining:
+  host:  behat.promettraining.com
+  root:  /var/www/sites/behat.promettraining.com/docroot
+  uri: https://behat.promettraining.com
+  paths:
+    - files: /var/www/sites/behat.promettraining.com/docroot/sites/default/files
+    - drush-script: '/var/www/sites//behat.promettraining.com/bin/drush
+  user: lhridley
+
