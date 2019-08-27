@@ -33,25 +33,14 @@ default:
     Drupal\DrupalExtension:
       blackbox: ~
       region_map:
-        Pre-header: ".region-pre-header"
-        Header: ".region-header"
-        Highlighted: ".region-highlighted"
-        Tabs: ".region-tabs"
-        Banner Top: ".region-banner-top"
-        Breadcrumbs: ".region-breadcrumbs"
-        Page Title: ".region-page-title"
-        Content: ".region-content"
-        Sidebar: ".region-sidebar"
-        Content Bottom: ".region-content-bottom"
-        Footer: ".region-footer"
-        Bottom: ".region-bottom"
+        Footer: "footer.footer"
       selectors:
         message_selector: '.messages'
         error_message_selector: '.messages--error'
         success_message_selector: '.messages--status'
       api_driver: 'drush'
       drush:
-        alias: 'drupal.local'
+        alias: 'behat.local'
     FailAid\Extension:
       screenshot:
         directory: "%paths.base%/screenshots/"
