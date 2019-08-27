@@ -35,6 +35,8 @@ default:
       region_map:
         Footer: "footer.footer"
         Page Title: "div.layout-page-title"
+        Admin Tabs: "div.layout-tabs"
+        Admin Content: "div.view-content"
       selectors:
         message_selector: '.messages'
         error_message_selector: '.messages--error'
