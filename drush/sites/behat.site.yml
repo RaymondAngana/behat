@@ -16,4 +16,3 @@ promettraining:
     - files: /var/www/sites/behat.promettraining.com/docroot/sites/default/files
     - drush-script: '/var/www/sites/behat.promettraining.com/bin/drush'
   user: lhridley
-
