@@ -33,7 +33,7 @@ default:
     Drupal\DrupalExtension:
       blackbox: ~
       region_map:
-        Footer: "footer.footer"
+        Footer: "region-footer"
         Page Title: "div.layout-page-title"
         Admin Tabs: "div.layout-tabs"
         Admin Content: "div.view-content"
